@@ -6,8 +6,8 @@ const bandaController = {
         let resultado = [];
 
         for (let i = 0; i < lista.length; i++) {
-            let nombre = lista[i].nombre;
-            resultado.push(nombre)
+            let banda = lista[i];
+            resultado.push(banda)
             
         }
         
