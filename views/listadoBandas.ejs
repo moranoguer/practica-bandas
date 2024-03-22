@@ -1,12 +1,19 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+
 <main>
-    <h1>Listado de bandas</h1>
-
     <ul>
-        <% for( let i = 0; i < lista.length; i++ ) { %>
-        <li> <%= lista[i] %> </li>
+        <% for (let i = 0; i < lista.length; i++) { %>
+            <li>
+                Nombre: <%= lista[i].nombre =%> 
+                Integrantes: <%= lista[i].integrantes =%>
+                Genero: <%= lista[i].genero =%>
+                TopCanciones: <%= lista[i].topCanciones =%>
+                Cover: <%= lista[i].cover =%>
+                Video: <%= lista[i].video =%>
+            </li>
         <% } %>
-
-    </ul>
-
-
+     </ul>
 </main>
+
+<%- include('./partials/footer') %>

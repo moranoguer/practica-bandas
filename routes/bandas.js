@@ -6,6 +6,6 @@ router.get("/", bandaController.index)
 
 router.get("/:id", bandaController.detalle)
 
-router.get("/genero/:genero", bandaController.genero)
+router.get("/:genero", bandaController.genero)
 
 module.exports = router

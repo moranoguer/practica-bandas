@@ -13,6 +13,7 @@ const bandaController = {
         
         return res.render("listadoBandas", {lista: resultado})
     },
+
     detalle: function (req, res) {
         let lista = bandas.lista;
         let id = req.params.id;
@@ -23,6 +24,7 @@ const bandaController = {
             return res.render("detalleBanda", {elegida: bandaElegida})
         }
     },
+    
     genero: function (req, res) {
         let lista = bandas.lista;
         let genero = req.params.genero.toLowerCase()
