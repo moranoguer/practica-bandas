@@ -84,4 +84,4 @@ const bandas = {
     ]
 };
 
-module.export = bandas
+module.exports = bandas
