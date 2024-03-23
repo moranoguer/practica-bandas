@@ -4,14 +4,18 @@
 <main>
     <ul>
         <% for (let i = 0; i < lista.length; i++) { %>
-            <li>
-                Nombre: <%= lista[i].nombre =%> 
-                Integrantes: <%= lista[i].integrantes =%>
-                Genero: <%= lista[i].genero =%>
-                TopCanciones: <%= lista[i].topCanciones =%>
-                Cover: <%= lista[i].cover =%>
-                Video: <%= lista[i].video =%>
-            </li>
+            <a href="/<%= lista[i].id %>">
+                <li>
+                    <article>
+                        <p>Nombre: <%= lista[i].nombre %></p>
+                        <p>Integrantes: <%= lista[i].integrantes %></p>
+                        <p>Genero: <%= lista[i].genero %></p>
+                        <p>TopCanciones: <%= lista[i].topCanciones %></p>
+                        <p>Cover: <%= lista[i].cover %></p>
+                        <p>Video: <%= lista[i].video %></p>
+                    </article>
+                </li>
+            </a>
         <% } %>
      </ul>
 </main>
