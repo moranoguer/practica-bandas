@@ -1,0 +1,20 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+
+<main>
+    <ul>
+        <% for (let i = 0; i < lista.length; i++) { %>
+            <a href="/bandas/id/<%= lista[i].id %>">
+                <li>
+                    <article>
+                        <!-- Agregar la imagen -->
+                        <img src="/images/<%= lista[i].cover %>" alt="" width="100px" />
+                        <p>Nombre: <%= lista[i].nombre %></p>
+                    </article>
+                </li>
+            </a>
+        <% } %>
+     </ul>
+</main>
+
+<%- include('./partials/footer') %>  

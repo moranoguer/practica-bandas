@@ -4,8 +4,8 @@ const bandaController = require("../controllers/bandaController")
 
 router.get("/", bandaController.index)
 
-router.get("/:id", bandaController.detalle)
+router.get("/id/:id", bandaController.detalle)
 
-router.get("/:genero", bandaController.genero)
+router.get("/genero/:genero", bandaController.genero)
 
 module.exports = router

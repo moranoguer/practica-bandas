@@ -4,15 +4,12 @@
 <main>
     <ul>
         <% for (let i = 0; i < lista.length; i++) { %>
-            <a href="/<%= lista[i].id %>">
+            <a href="/bandas/id/<%= lista[i].id %>">
                 <li>
                     <article>
+                        <!-- Agregar la imagen -->
+                        <img src="/images/<%= lista[i].cover %>" alt="" width="100px" />
                         <p>Nombre: <%= lista[i].nombre %></p>
-                        <p>Integrantes: <%= lista[i].integrantes %></p>
-                        <p>Genero: <%= lista[i].genero %></p>
-                        <p>TopCanciones: <%= lista[i].topCanciones %></p>
-                        <p>Cover: <%= lista[i].cover %></p>
-                        <p>Video: <%= lista[i].video %></p>
                     </article>
                 </li>
             </a>

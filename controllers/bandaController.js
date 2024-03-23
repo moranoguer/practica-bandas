@@ -33,7 +33,11 @@ const bandaController = {
         for (let i = 0; i < lista.length; i++) {
             let nombre = lista[i].nombre;
             if (lista[i].genero.toLowerCase() == genero) {
-               resultado.push(nombre) 
+               resultado.push({
+                nombre: lista[i].nombre,
+                id: lista[i].id,
+                cover: lista[i].cover
+               }) 
             }
         }
 
