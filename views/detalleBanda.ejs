@@ -1,0 +1,22 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+
+<main>
+    <article>
+        <!-- Agregar la imagen -->
+        <img src="/images/<%= elegida.cover %>" alt="" width="100px" />
+        <p>Nombre: <%= elegida.nombre %></p>
+        <p>Integrantes: <%= elegida.integrantes %></p>
+        <!-- Linkear género -->
+        <p>Genero: <a href="/bandas/genero/<%= elegida.genero %>"><%= elegida.genero %></a></p>
+        <p>TopCanciones: </p>
+        <ol>
+            <% for(let i = 0; i < elegida.topCanciones.length; i++) { %>
+                <li><%= elegida.topCanciones[i] %></li>
+            <% } %>
+        </ol>
+        <p>Video: <%= elegida.video %></p>
+    </article>
+</main>
+
+<%- include('./partials/footer') %>  
